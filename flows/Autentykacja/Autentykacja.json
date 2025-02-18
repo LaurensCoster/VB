@@ -1,0 +1,45 @@
+{
+  "name": "eea1bae7-47e0-4065-ba9a-10a097fb415f",
+  "displayName": "Autentykacja",
+  "transitionRoutes": [ {
+    "condition": "True",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "wstep",
+    "name": "5e7b14f4-3330-417d-b8e3-23bceb62e66a"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Nie rozumiem. Możesz powtórzyć?", "Nie rozumiem co mówisz. Możesz powtórzyć?", "Możesz to powtórzyć?", "Możesz powtórzyć?", "Możesz powiedzieć to jeszcze raz?", "Nie rozumiem.", "Możesz powtórzyć, o co chodziło?", "Słucham?", "Proszę?", "Możesz jeszcze raz to powiedzieć?", "Nie rozumiem.", "Nie bardzo rozumiem." ]
+        },
+        "languageCode": "pl"
+      } ]
+    },
+    "name": "894771c8-de52-48a9-add5-bfa32b8b52dd"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Nie rozumiem. Możesz powtórzyć?", "Nie rozumiem co mówisz. Możesz powtórzyć?", "Możesz to powtórzyć?", "Możesz powtórzyć?", "Możesz powiedzieć to jeszcze raz?", "Nie rozumiem.", "Możesz powtórzyć, o co chodziło?", "Słucham?", "Proszę?", "Możesz jeszcze raz to powiedzieć?", "Nie rozumiem.", "Nie bardzo rozumiem." ]
+        },
+        "languageCode": "pl"
+      } ]
+    },
+    "name": "99cef60e-fd08-4758-9ab6-e876eabd8e31"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "613752cc-33dc-45fb-93a6-871c7120086a",
+    "languageCode": "pl"
+  } ]
+}

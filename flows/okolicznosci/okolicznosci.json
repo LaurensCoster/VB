@@ -1,0 +1,58 @@
+{
+  "name": "460e88aa-c3d2-4be0-ab0f-f77f73299d82",
+  "displayName": "okolicznosci",
+  "transitionRoutes": [ {
+    "condition": "True",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Weryfikacja przebiegła pomyślnie. Proszę podać okoliczności szkody." ]
+        },
+        "languageCode": "pl"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "targetPage": "taj",
+    "name": "7b3f6d86-47b2-48ef-a92e-8d05a786213f"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Nie rozumiem. Możesz powtórzyć?", "Nie rozumiem co mówisz. Możesz powtórzyć?", "Możesz to powtórzyć?", "Możesz powtórzyć?", "Możesz powiedzieć to jeszcze raz?", "Nie rozumiem.", "Możesz powtórzyć, o co chodziło?", "Słucham?", "Proszę?", "Możesz jeszcze raz to powiedzieć?", "Nie rozumiem.", "Nie bardzo rozumiem." ]
+        },
+        "languageCode": "pl"
+      } ]
+    },
+    "name": "74bdf10b-8ae2-4ea0-90bb-6ba77c76ee15"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Nie rozumiem. Możesz powtórzyć?", "Nie rozumiem co mówisz. Możesz powtórzyć?", "Możesz to powtórzyć?", "Możesz powtórzyć?", "Możesz powiedzieć to jeszcze raz?", "Nie rozumiem.", "Możesz powtórzyć, o co chodziło?", "Słucham?", "Proszę?", "Możesz jeszcze raz to powiedzieć?", "Nie rozumiem.", "Nie bardzo rozumiem." ]
+        },
+        "languageCode": "pl"
+      } ]
+    },
+    "name": "557a8bd0-d601-4c88-a2bc-a8595eb0ad4f"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "42c3143d-d1c8-4bdd-aa1f-b763aa4d7312",
+    "languageCode": "pl"
+  } ]
+}

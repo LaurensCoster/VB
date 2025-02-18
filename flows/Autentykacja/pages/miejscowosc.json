@@ -1,0 +1,51 @@
+{
+  "name": "cf478be2-a180-4afa-8a79-a8041c7b928f",
+  "displayName": "miejscowosc",
+  "form": {
+    "parameters": [ {
+      "displayName": "miejscowosc",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Proszę podać nazwę miejscowości w której miała miejsce szkoda." ]
+            },
+            "languageCode": "pl"
+          } ],
+          "advancedSettings": {
+            "playbackInterruptionSettings": {
+            
+            },
+            "dtmfSettings": {
+              "useSystemEntityRule": false
+            }
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "$session.params.miejscowosc",
+      "value": null
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "sprawdzenie miejscowosci",
+    "name": "a41776ed-743a-4f9f-b216-b79b066e3d2a"
+  } ]
+}

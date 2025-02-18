@@ -1,0 +1,23 @@
+{
+  "name": "e2d1f460-85da-47a2-bb34-47e68a5ea4d3",
+  "displayName": "niepowodzenie",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Autentykacja zakończyła się niepowodzeniem. $session.params.counter" ]
+      },
+      "languageCode": "pl"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "61518bd1-3cec-4e05-b569-12ec18acd8bc",
+  "displayName": "wstep",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Dzień dobry. Dzwonimy w sprawie likwidacji szkody. Szkoda została przekazana na specjalną ścieżkę\nlikwidacji, aby jak najszybciej ustalić odpowiedzialność i\nwypłacić odszkodowanie. Nagrywamy rozmowę. Jeśli nie ma zgody prosimy o rozłączenie się." ]
+      },
+      "languageCode": "pl"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "True",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "counter",
+        "value": 0
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "targetPage": "imie",
+    "name": "b4ef8a6d-bb20-4a76-befa-dff91e71dccb"
+  } ],
+  "description": "Wstępne informacje i zgoda na nagrywanie, ustawia counter"
+}
