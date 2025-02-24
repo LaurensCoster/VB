@@ -10,7 +10,7 @@
         "initialPromptFulfillment": {
           "messages": [ {
             "text": {
-              "text": [ "Proszę podać nazwę miejscowości w której miała miejsce szkoda." ]
+              "text": [ "Podaj proszę miejscowość, w której doszło do szkody." ]
             },
             "languageCode": "pl"
           } ],

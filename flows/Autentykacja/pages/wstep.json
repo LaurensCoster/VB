@@ -7,7 +7,7 @@
   "entryFulfillment": {
     "messages": [ {
       "text": {
-        "text": [ "Dzień dobry. Dzwonimy w sprawie likwidacji szkody. Szkoda została przekazana na specjalną ścieżkę\nlikwidacji, aby jak najszybciej ustalić odpowiedzialność i\nwypłacić odszkodowanie. Nagrywamy rozmowę. Jeśli nie ma zgody prosimy o rozłączenie się." ]
+        "text": [ "Dzień dobry! Mówi do Ciebie Voicebot, Twój automatyczny asystent do spraw likwidacji szkód.\n\nMam dobrą wiadomość! Twoja sprawa została przekazana na specjalną ścieżkę likwidacji, dzięki czemu szybciej ustalimy odpowiedzialność i przygotujemy wycenę szkody.\n\nAby wszystko dokładnie udokumentować, nagrywamy tę rozmowę. Jeśli nie wyrażasz na to zgody, rozłącz się." ]
       },
       "languageCode": "pl"
     } ],
@@ -23,6 +23,12 @@
   "transitionRoutes": [ {
     "condition": "True",
     "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Abyśmy mogli ruszyć z Twoją sprawą, potrzebujemy jeszcze dwóch informacji. To taka szybka weryfikacja, żebyśmy mieli pewność, że rozmawiamy z właściwą osobą." ]
+        },
+        "languageCode": "pl"
+      } ],
       "setParameterActions": [ {
         "parameter": "counter",
         "value": 0

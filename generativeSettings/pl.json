@@ -58,7 +58,10 @@
     }, {
       "category": "HATE_SPEECH",
       "filterLevel": "MODERATE_BLOCKING"
-    } ]
+    } ],
+    "promptSecuritySettings": {
+    
+    }
   },
   "languageCode": "pl",
   "knowledgeConnectorSettings": {

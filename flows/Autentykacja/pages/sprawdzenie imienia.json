@@ -37,7 +37,7 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Nieprawidłowe imię. Proszę spróbować jeszcze raz." ]
+          "text": [ "Przepraszam, wygląda na to, że coś poszło nie tak. Możliwe, że wystąpił  problem z  interpretacją  danych. Spróbujemy pobrać je ponownie." ]
         },
         "languageCode": "pl"
       } ],

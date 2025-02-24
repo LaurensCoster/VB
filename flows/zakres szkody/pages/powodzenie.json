@@ -1,0 +1,23 @@
+{
+  "name": "ecdb1ea0-a15b-4a17-b75e-0bcc847e7e07",
+  "displayName": "powodzenie",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Bardzo dziękujemy za podanie wszystkich potrzebnych informacji i współpracę w tym procesie. To była naprawdę owocna rozmowa!\n\nPo zakończonej romowie prześlemy wycenę do PZU S.A.\n\nJeszcze raz dziękujemy za cierpliwość i zaufanie!" ]
+      },
+      "languageCode": "pl"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  }
+}

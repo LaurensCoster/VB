@@ -10,7 +10,7 @@
         "initialPromptFulfillment": {
           "messages": [ {
             "text": {
-              "text": [ "Na początku chcemy się upewnić, że rozmawiamy z odpowiednią osobą. Proszę podać imię." ]
+              "text": [ "Podaj proszę twoje pełne imię." ]
             },
             "languageCode": "pl"
           } ],

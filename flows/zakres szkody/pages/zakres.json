@@ -1,0 +1,22 @@
+{
+  "name": "072822f3-516e-4b35-b3f7-709059c973c4",
+  "displayName": "zakres",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "True",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "powodzenie",
+    "name": "d4749850-6112-4316-8a4c-deff0b71f481"
+  }, {
+    "condition": "False",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "mail",
+    "name": "4a812094-f711-4352-abb8-1b0dda5183ff"
+  } ]
+}

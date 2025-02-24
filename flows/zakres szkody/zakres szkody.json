@@ -1,18 +1,14 @@
 {
-  "name": "460e88aa-c3d2-4be0-ab0f-f77f73299d82",
-  "displayName": "okolicznosci",
+  "name": "df0473ce-8e6a-4103-b05f-7096f3a7c713",
+  "displayName": "zakres szkody",
   "transitionRoutes": [ {
     "condition": "True",
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Super! Dane się zgadzają. Możemy przejść do kolejnego kroku. Teraz najważniejsze." ]
+          "text": [ "Dziękujemy za okoliczności, teraz przyczyny." ]
         },
         "languageCode": "pl"
-      } ],
-      "setParameterActions": [ {
-        "parameter": "counter",
-        "value": 0
       } ],
       "advancedSettings": {
         "playbackInterruptionSettings": {
@@ -23,8 +19,8 @@
         }
       }
     },
-    "targetPage": "okolicznosci",
-    "name": "7b3f6d86-47b2-48ef-a92e-8d05a786213f"
+    "targetPage": "zakres",
+    "name": "0903c6f6-5ade-4569-bc99-167f841ebe4e"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
@@ -36,7 +32,7 @@
         "languageCode": "pl"
       } ]
     },
-    "name": "74bdf10b-8ae2-4ea0-90bb-6ba77c76ee15"
+    "name": "0837399d-3a13-4287-84bf-db82eac2e8c2"
   }, {
     "event": "sys.no-input-default",
     "triggerFulfillment": {
@@ -47,16 +43,27 @@
         "languageCode": "pl"
       } ]
     },
-    "name": "557a8bd0-d601-4c88-a2bc-a8595eb0ad4f"
+    "name": "e7b1d9a9-69db-494e-b0d4-649acdc4bf75"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
-    "classificationThreshold": 0.30000001
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true
   },
   "nluSettingsList": [ {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
-    "customConfigKey": "42c3143d-d1c8-4bdd-aa1f-b763aa4d7312",
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "customConfigKey": "b8f29147-d83b-4745-a248-137ccd9a2704",
+    "multiIntentSettings": {
+    
+    },
     "languageCode": "pl"
   } ]
 }

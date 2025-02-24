@@ -1,0 +1,23 @@
+{
+  "name": "a373ab26-c80d-4601-8838-a0b43723542a",
+  "displayName": "mail",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Rozumiem, że wypełnianie formularzy może być czasochłonne, ale te informacje są niezbędne do  dokładnej  wyceny  szkody.  Dla ułatwienia za chwilę  wyślemy e-mail  ze  specjalnym  formularzem. Prosimy  o  jego  uzupełnienie  i  odesłanie  w  ciągu 8 godzin.   To  pozwoli  nam  szybko  i  sprawnie  zająć  się  Twoją  szkodą. \nDziękujemy  za  zrozumienie  i  współpracę!\n \n \n " ]
+      },
+      "languageCode": "pl"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  }
+}
