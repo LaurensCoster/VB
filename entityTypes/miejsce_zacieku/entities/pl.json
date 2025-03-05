@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "sufit",
+    "synonyms": [ "suficie", "sufit" ],
+    "languageCode": "pl"
+  }, {
+    "value": "sciana",
+    "synonyms": [ "oknie", "ściana", "ścianie" ],
+    "languageCode": "pl"
+  }, {
+    "value": "podloga",
+    "synonyms": [ "podłodze", "podłoga", "ziemi", "ziemia" ],
+    "languageCode": "pl"
+  }, {
+    "value": "drzwi",
+    "synonyms": [ "drzwi", "drzwiach" ],
+    "languageCode": "pl"
+  } ]
+}

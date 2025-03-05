@@ -28,15 +28,25 @@
       "convertPhoneticAlphabets": true
     } ]
   },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Aby dokonać oceny zalania wysokości szkody na suficie, potrzebuję szczegółowych informacji." ]
+      },
+      "languageCode": "pl"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
   "transitionRoutes": [ {
-    "condition": "($page.params.status = \"FINAL\" AND \"halogeny\") AND in AND $page.params.wykonczenie_sufit",
+    "condition": "$page.params.status = \"FINAL\" AND $sys.func.CONTAIN($session.params.wykonczenie_sufit, \"halogeny\") = True",
     "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "$session.params.wykonczenie_sufit\r\n" ]
-        },
-        "languageCode": "pl"
-      } ],
       "advancedSettings": {
         "playbackInterruptionSettings": {
         
@@ -49,24 +59,11 @@
     "targetPage": "halogeny",
     "name": "ec8002de-4bf0-4594-954c-70d18b9b8a1e"
   }, {
-    "condition": "($page.params.status = \"FINAL\" AND NOT \"halogeny\") AND in AND $page.params.wykonczenie_sufit",
+    "condition": "$page.params.status = \"FINAL\" AND $sys.func.CONTAIN($session.params.wykonczenie_sufit, \"halogeny\") = False",
     "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "$session.params.wykonczenie_sufit" ]
-        },
-        "languageCode": "pl"
-      } ],
-      "advancedSettings": {
-        "playbackInterruptionSettings": {
-        
-        },
-        "dtmfSettings": {
-          "useSystemEntityRule": false
-        }
-      }
+    
     },
     "targetPage": "uszkodzenia",
-    "name": "d41e2a5d-38ac-4e37-a6e1-1b7e1a4b91a5"
+    "name": "90a59418-16a5-49d6-a39a-93f26f6bf7de"
   } ]
 }

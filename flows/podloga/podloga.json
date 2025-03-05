@@ -1,6 +1,21 @@
 {
   "name": "9546d4e8-b398-4c7e-809e-97461adc843a",
   "displayName": "podloga",
+  "transitionRoutes": [ {
+    "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"podloga\") = True",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "wykonczenie",
+    "name": "906dcd38-0bc3-482c-956b-15cd30766df3"
+  }, {
+    "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"podloga\") = False",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "drzwi",
+    "name": "77a56cf9-77cc-48ad-b8de-65cadd711e2c"
+  } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
     "triggerFulfillment": {
@@ -31,6 +46,7 @@
   "nluSettingsList": [ {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
+    "customConfigKey": "ad2aa8e8-ae32-4c15-9c07-02c16f7d4433",
     "languageCode": "pl"
   } ]
 }

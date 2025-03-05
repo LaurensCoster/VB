@@ -49,12 +49,6 @@
     } ]
   },
   "entryFulfillment": {
-    "messages": [ {
-      "text": {
-        "text": [ "Aby dokonać oceny zalania wysokości szkody na suficie, potrzebuję szczegółowych informacji." ]
-      },
-      "languageCode": "pl"
-    } ],
     "advancedSettings": {
       "playbackInterruptionSettings": {
       

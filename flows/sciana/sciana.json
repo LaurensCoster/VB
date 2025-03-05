@@ -1,6 +1,21 @@
 {
   "name": "336f47bd-7dca-437c-8a03-67a0b9f9ef9a",
   "displayName": "sciana",
+  "transitionRoutes": [ {
+    "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"sciana\") = True",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "wykonczenie",
+    "name": "40d03238-55a4-48d3-b7e5-01edc1cee6f4"
+  }, {
+    "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"sciana\") = False",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "podloga",
+    "name": "6ad44d84-c3bf-42ba-ab9d-11802c318178"
+  } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
     "triggerFulfillment": {
@@ -31,6 +46,7 @@
   "nluSettingsList": [ {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
+    "customConfigKey": "9c70fa17-008d-4d85-9718-ce97cb35ce3c",
     "languageCode": "pl"
   } ]
 }

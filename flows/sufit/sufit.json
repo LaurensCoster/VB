@@ -2,12 +2,19 @@
   "name": "f6fcb0ba-857b-468b-8c5b-b25da2097c55",
   "displayName": "sufit",
   "transitionRoutes": [ {
-    "condition": "True",
+    "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"sufit\") = True",
     "triggerFulfillment": {
     
     },
     "targetPage": "wykonczenie",
     "name": "1d737522-9f0b-40d9-8168-80e2b54e100c"
+  }, {
+    "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"sufit\") = False",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "sciana",
+    "name": "04414099-fac7-4d0f-b7df-9d221277762a"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
