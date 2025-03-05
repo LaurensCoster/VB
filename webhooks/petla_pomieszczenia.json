@@ -1,0 +1,12 @@
+{
+  "name": "e22b7d2c-a32d-40ae-829f-805ded28294a",
+  "displayName": "petla_pomieszczenia",
+  "genericWebService": {
+    "uri": "https://petla-pomieszczenia-73383908694.us-central1.run.app",
+    "webhookType": "STANDARD",
+    "serviceAgentAuth": "ID_TOKEN"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

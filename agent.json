@@ -4,13 +4,37 @@
   "timeZone": "America/Los_Angeles",
   "enableLogging": true,
   "projectNumber": 73383908694,
+  "speechToTextSettings": {
+  
+  },
   "startFlow": "Default Start Flow",
   "enableStackdriverLogging": true,
   "advancedSettings": {
+    "audioExportGcsDestination": {
+    
+    },
+    "speechSettings": {
+      "endpointerSensitivity": 90,
+      "noSpeechTimeout": {
+        "seconds": 5
+      }
+    },
+    "playbackInterruptionSettings": {
+    
+    },
     "loggingSettings": {
       "enableStackdriverLogging": true,
       "enableInteractionLogging": true
+    },
+    "speechAdaptationSettings": {
+    
     }
+  },
+  "speakerIdSettings": {
+  
+  },
+  "duplexSettings": {
+  
   },
   "answerFeedbackSettings": {
   

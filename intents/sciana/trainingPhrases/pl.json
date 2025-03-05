@@ -1,0 +1,33 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "w ",
+      "auto": true
+    }, {
+      "text": "rogu",
+      "parameterId": "last-name",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "na ",
+      "auto": true
+    }, {
+      "text": "ścianie",
+      "parameterId": "location",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "ściana",
+      "parameterId": "location",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  } ]
+}

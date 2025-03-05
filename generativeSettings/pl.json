@@ -1,6 +1,6 @@
 {
   "fallbackSettings": {
-  
+    "selectedPrompt": "Default"
   },
   "generativeSafetySettings": {
     "raiSettings": {
@@ -60,7 +60,8 @@
       "filterLevel": "MODERATE_BLOCKING"
     } ],
     "promptSecuritySettings": {
-    
+      "sensitivityLevel": 3,
+      "minQueryLength": 15
     }
   },
   "languageCode": "pl",
@@ -70,6 +71,11 @@
     }
   },
   "llmModelSettings": {
-    "model": "gemini-1.5-flash"
+    "model": "gemini-1.5-flash-002",
+    "parameters": {
+      "temperature": 1,
+      "inputTokenLimit": "INPUT_TOKEN_LIMIT_MEDIUM",
+      "outputTokenLimit": "OUTPUT_TOKEN_LIMIT_MEDIUM"
+    }
   }
 }

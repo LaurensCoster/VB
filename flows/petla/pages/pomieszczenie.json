@@ -1,0 +1,40 @@
+{
+  "name": "ec519f4a-d984-4e93-a66c-bab442033b15",
+  "displayName": "pomieszczenie",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "petla_pomieszczenia",
+    "tag": "petla-pomieszczenia",
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "True",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Teraz skupmy się na pomieszczeniu jakim jest $session.params.pomieszczenie\r\nZaraz zapytamy o szacunkowe wymiary tego pomieszczenia - długość, szerokość i wysokość. Nie muszą być idealnie\r\ndokładne, chodzi o przybliżone wartości w metrach." ]
+        },
+        "languageCode": "pl"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "targetPage": "wymiary",
+    "name": "89af815a-9f6b-47e8-8b41-fa73a34ec691"
+  } ]
+}

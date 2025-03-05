@@ -1,0 +1,17 @@
+{
+  "name": "b161442b-b95f-4d1a-b284-c07f43347eac",
+  "displayName": "sciana",
+  "parameters": [ {
+    "id": "location",
+    "entityType": "@sys.location"
+  }, {
+    "id": "last-name",
+    "entityType": "@sys.last-name"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-contextual",
+    "value": "sys-contextual"
+  } ],
+  "numTrainingPhrases": 3
+}

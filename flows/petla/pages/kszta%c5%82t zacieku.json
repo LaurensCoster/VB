@@ -1,0 +1,75 @@
+{
+  "name": "70528a2f-a52d-4d65-af11-ee853514c07b",
+  "displayName": "kształt zacieku",
+  "form": {
+    "parameters": [ {
+      "displayName": "ksztalt_zacieku",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Jaki jest kształt zacieku? Na przykład okrągły, prostokątny, nieregularny." ]
+            },
+            "languageCode": "pl"
+          } ],
+          "advancedSettings": {
+            "playbackInterruptionSettings": {
+            
+            },
+            "dtmfSettings": {
+              "useSystemEntityRule": false
+            }
+          }
+        }
+      }
+    }, {
+      "displayName": "wymiary_zacieku",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Jakie są jego przybliżone wymiary? Na przykład długość, szerokość, średnica. Wartość może być podana w centymetrach lub metrach kwadratowych." ]
+            },
+            "languageCode": "pl"
+          } ],
+          "advancedSettings": {
+            "playbackInterruptionSettings": {
+            
+            },
+            "dtmfSettings": {
+              "useSystemEntityRule": false
+            }
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Rozumiem, że dokładne określenie miejsca i rozmiaru zalania może być trudne, ale prośba o podanie jak najwięcej\r\ninformacji. To pomoże nam w dokładniejszej ocenie szkody." ]
+      },
+      "languageCode": "pl"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "miejsce zacieku",
+    "name": "f628ad05-0c4c-409e-a23c-ada0aef9d4f9"
+  } ]
+}

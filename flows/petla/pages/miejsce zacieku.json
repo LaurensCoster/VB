@@ -1,0 +1,45 @@
+{
+  "name": "aecd8ec5-e130-442e-b42c-5a8fe4154033",
+  "displayName": "miejsce zacieku",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Gdzie dokładnie znajduje się zaciek w pomieszczeniu? Na przykład na suficie, na ścianie, przy oknie, w rogu pokoju." ]
+      },
+      "languageCode": "pl"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "sufit",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "sufit",
+    "name": "42d0e9ea-b517-4f8d-aa60-488d8055cd07"
+  }, {
+    "intent": "sciana",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "sciana",
+    "name": "f504a53e-8caa-4076-addf-e471ceebab61"
+  }, {
+    "intent": "podloga",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "podloga",
+    "name": "ef1f43cb-0a96-494c-b6aa-cbafe6c2f758"
+  } ]
+}

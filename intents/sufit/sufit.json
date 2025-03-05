@@ -1,0 +1,17 @@
+{
+  "name": "cf58f868-6e7e-4070-aacd-4e1c14da80b0",
+  "displayName": "sufit",
+  "parameters": [ {
+    "id": "last-name",
+    "entityType": "@sys.last-name"
+  }, {
+    "id": "location",
+    "entityType": "@sys.location"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-contextual",
+    "value": "sys-contextual"
+  } ],
+  "numTrainingPhrases": 4
+}

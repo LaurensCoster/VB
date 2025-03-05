@@ -1,22 +1,15 @@
 {
-  "name": "00000000-0000-0000-0000-000000000000",
-  "displayName": "Default Start Flow",
-  "description": "A start flow created along with the agent",
+  "name": "f6fcb0ba-857b-468b-8c5b-b25da2097c55",
+  "displayName": "sufit",
   "transitionRoutes": [ {
-    "intent": "Default Welcome Intent",
+    "condition": "True",
     "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "Cześć!", "Witaj!", "Dzień dobry!", "Witam!" ]
-        },
-        "languageCode": "pl"
-      } ]
+    
     },
-    "targetFlow": "sufit",
-    "name": "799f4921-6587-447e-a0e0-0e75b75ebae8"
+    "targetPage": "wykonczenie",
+    "name": "1d737522-9f0b-40d9-8168-80e2b54e100c"
   } ],
   "eventHandlers": [ {
-    "targetFlow": "Autentykacja",
     "event": "sys.no-match-default",
     "triggerFulfillment": {
       "messages": [ {
@@ -26,9 +19,8 @@
         "languageCode": "pl"
       } ]
     },
-    "name": "c69329b5-8ada-47c7-b813-0a80ab6f739b"
+    "name": "873c3201-0dcc-4d6b-835c-459a0e8f5cdb"
   }, {
-    "targetFlow": "Autentykacja",
     "event": "sys.no-input-default",
     "triggerFulfillment": {
       "messages": [ {
@@ -38,7 +30,7 @@
         "languageCode": "pl"
       } ]
     },
-    "name": "d53bf9a3-0dce-4f46-896c-9a310e8084be"
+    "name": "02f8e849-8a51-49c7-86b0-5ea397b344bd"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
@@ -47,7 +39,7 @@
   "nluSettingsList": [ {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
-    "customConfigKey": "fb96b6fe-14dc-4a31-9c9c-bd06301906d2",
+    "customConfigKey": "e080547d-4627-40f9-a54f-d54c7b1722b8",
     "languageCode": "pl"
   } ]
 }

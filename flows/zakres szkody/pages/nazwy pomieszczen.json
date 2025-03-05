@@ -1,0 +1,66 @@
+{
+  "name": "0fb4587a-1618-4c7e-b28f-4d1d98ad7051",
+  "displayName": "nazwy pomieszczen",
+  "form": {
+    "parameters": [ {
+      "displayName": "nazwy_pomieszczen",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Jak nazywają się te pomieszczenia?" ]
+            },
+            "languageCode": "pl"
+          } ],
+          "advancedSettings": {
+            "playbackInterruptionSettings": {
+            
+            },
+            "dtmfSettings": {
+              "useSystemEntityRule": false
+            }
+          }
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "webhook": "rozdzielenie_nazw",
+      "tag": "rozdzielenie_nazw",
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "targetPage": "sprawdzenie ilosci pomieszczen",
+    "name": "6073580d-cd07-42c7-9c5e-bde26031ffd9"
+  } ],
+  "eventHandlers": [ {
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "web-hook error" ]
+        },
+        "languageCode": "pl"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "name": "ef8c3541-a431-4353-9b0c-a950cb3ded37"
+  } ]
+}

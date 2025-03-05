@@ -1,0 +1,31 @@
+{
+  "entities": [ {
+    "value": "karton gips",
+    "synonyms": [ "karton gips", "karton gipsu", "kg" ],
+    "languageCode": "pl"
+  }, {
+    "value": "halogeny",
+    "synonyms": [ "halogenami", "halogeny", "lampki", "lampy" ],
+    "languageCode": "pl"
+  }, {
+    "value": "kasetony",
+    "synonyms": [ "kasetonami", "kasetony", "kesetonów" ],
+    "languageCode": "pl"
+  }, {
+    "value": "mdf",
+    "synonyms": [ "mdf", "płyta mdf", "płyty mdf", "płyt mdf" ],
+    "languageCode": "pl"
+  }, {
+    "value": "wełna mineralna",
+    "synonyms": [ "wełna mineralna", "wełną mineralną", "wełnę mineralną", "wełny mineralnej" ],
+    "languageCode": "pl"
+  }, {
+    "value": "farba",
+    "synonyms": [ "farba", "farbą", "pomalowany" ],
+    "languageCode": "pl"
+  }, {
+    "value": "tapeta",
+    "synonyms": [ "tapeta", "tapety" ],
+    "languageCode": "pl"
+  } ]
+}

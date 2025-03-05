@@ -1,0 +1,63 @@
+{
+  "name": "49cc2f53-676e-4aff-a43f-9aec8515b177",
+  "displayName": "sprawdzenie ilosci pomieszczen",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.ilosc_pomieszczen = $session.params.ilosc_nazw_pomieszczen",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loop_counter",
+        "value": 0
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "targetFlow": "petla",
+    "name": "5b0582da-74bb-4e56-8c61-b76ebb21a6d8"
+  }, {
+    "condition": "$session.params.ilosc_pomieszczen != $session.params.ilosc_nazw_pomieszczen",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ilość pomieszczeń nie zgadza się z podaną ilością nazw. Zapytamy o nie ponownie." ]
+        },
+        "languageCode": "pl"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "$session.params.ilosc_pomieszczen",
+        "value": null
+      }, {
+        "parameter": "$session.params.nazwy_pomieszczen",
+        "value": null
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "targetPage": "ilosc pomieszczen",
+    "name": "942cd215-ac7b-4e3c-b56a-1091b2049911"
+  } ]
+}

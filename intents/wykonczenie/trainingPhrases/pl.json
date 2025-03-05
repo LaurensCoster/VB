@@ -1,0 +1,125 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Jest naklejona ",
+      "auto": true
+    }, {
+      "text": "tapeta",
+      "parameterId": "wykonczenie_sufit",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "tapeta",
+      "parameterId": "wykonczenie_sufit",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "Na suficie są ",
+      "auto": true
+    }, {
+      "text": "halogeny",
+      "parameterId": "wykonczenie_sufit",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "Sufit jest z ",
+      "auto": true
+    }, {
+      "text": "płyt mdf",
+      "parameterId": "wykonczenie_sufit",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "Na suficie są ",
+      "auto": true
+    }, {
+      "text": "kasetony",
+      "parameterId": "wykonczenie_sufit",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "Sufit jest zrobiony z ",
+      "auto": true
+    }, {
+      "text": "płyt karton gips",
+      "parameterId": "wykonczenie_sufit",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "Sufit jest ",
+      "auto": true
+    }, {
+      "text": "pomalowany farbą",
+      "parameterId": "wykonczenie_sufit",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "farba",
+      "parameterId": "wykonczenie_sufit",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "wełna mineralna",
+      "parameterId": "wykonczenie_sufit",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "płyta mdf",
+      "parameterId": "wykonczenie_sufit",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "kasetony",
+      "parameterId": "wykonczenie_sufit",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "halogeny",
+      "parameterId": "wykonczenie_sufit",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "Karton gips",
+      "parameterId": "wykonczenie_sufit",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  } ]
+}

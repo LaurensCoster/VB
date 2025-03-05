@@ -1,0 +1,24 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "na ziemi",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "na podłodze",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "podłoga",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  } ]
+}

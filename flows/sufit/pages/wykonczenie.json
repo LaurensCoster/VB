@@ -1,0 +1,72 @@
+{
+  "name": "2a6da123-7711-402f-a030-e6240d7e9c14",
+  "displayName": "wykonczenie",
+  "form": {
+    "parameters": [ {
+      "displayName": "wykonczenie_sufit",
+      "required": true,
+      "entityType": "@wykonczenie_sufit",
+      "isList": true,
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Jaki jest rodzaj wykończenia sufitu? Na przykład pomalowany farbą, z płyt gipsowo-kartonowych." ]
+            },
+            "languageCode": "pl"
+          } ],
+          "advancedSettings": {
+            "playbackInterruptionSettings": {
+            
+            },
+            "dtmfSettings": {
+              "useSystemEntityRule": false
+            }
+          }
+        }
+      },
+      "convertPhoneticAlphabets": true
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "($page.params.status = \"FINAL\" AND \"halogeny\") AND in AND $page.params.wykonczenie_sufit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$session.params.wykonczenie_sufit\r\n" ]
+        },
+        "languageCode": "pl"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "targetPage": "halogeny",
+    "name": "ec8002de-4bf0-4594-954c-70d18b9b8a1e"
+  }, {
+    "condition": "($page.params.status = \"FINAL\" AND NOT \"halogeny\") AND in AND $page.params.wykonczenie_sufit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$session.params.wykonczenie_sufit" ]
+        },
+        "languageCode": "pl"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "targetPage": "uszkodzenia",
+    "name": "d41e2a5d-38ac-4e37-a6e1-1b7e1a4b91a5"
+  } ]
+}

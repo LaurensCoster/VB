@@ -1,22 +1,7 @@
 {
-  "name": "00000000-0000-0000-0000-000000000000",
-  "displayName": "Default Start Flow",
-  "description": "A start flow created along with the agent",
-  "transitionRoutes": [ {
-    "intent": "Default Welcome Intent",
-    "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "Cześć!", "Witaj!", "Dzień dobry!", "Witam!" ]
-        },
-        "languageCode": "pl"
-      } ]
-    },
-    "targetFlow": "sufit",
-    "name": "799f4921-6587-447e-a0e0-0e75b75ebae8"
-  } ],
+  "name": "336f47bd-7dca-437c-8a03-67a0b9f9ef9a",
+  "displayName": "sciana",
   "eventHandlers": [ {
-    "targetFlow": "Autentykacja",
     "event": "sys.no-match-default",
     "triggerFulfillment": {
       "messages": [ {
@@ -26,9 +11,8 @@
         "languageCode": "pl"
       } ]
     },
-    "name": "c69329b5-8ada-47c7-b813-0a80ab6f739b"
+    "name": "5d3e5975-985f-464b-943f-450da82ad1b0"
   }, {
-    "targetFlow": "Autentykacja",
     "event": "sys.no-input-default",
     "triggerFulfillment": {
       "messages": [ {
@@ -38,7 +22,7 @@
         "languageCode": "pl"
       } ]
     },
-    "name": "d53bf9a3-0dce-4f46-896c-9a310e8084be"
+    "name": "f045138e-eee3-4e5e-90a5-3cf878b61f89"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
@@ -47,7 +31,6 @@
   "nluSettingsList": [ {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
-    "customConfigKey": "fb96b6fe-14dc-4a31-9c9c-bd06301906d2",
     "languageCode": "pl"
   } ]
 }

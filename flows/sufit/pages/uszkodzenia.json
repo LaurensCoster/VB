@@ -1,0 +1,75 @@
+{
+  "name": "9e370f14-ddf2-4383-8740-f6796d8fb171",
+  "displayName": "uszkodzenia",
+  "form": {
+    "parameters": [ {
+      "displayName": "miejsce_sufit",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Gdzie dokładnie widać ślady zalania? Na przykład w rogu pokoju, przy lampie, na środku sufitu." ]
+            },
+            "languageCode": "pl"
+          } ],
+          "advancedSettings": {
+            "playbackInterruptionSettings": {
+            
+            },
+            "dtmfSettings": {
+              "useSystemEntityRule": false
+            }
+          }
+        }
+      }
+    }, {
+      "displayName": "inne_sufit",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Czy widać jakieś inne uszkodzenia sufitu? Na przykład pęknięcia, odkształcenia." ]
+            },
+            "languageCode": "pl"
+          } ],
+          "advancedSettings": {
+            "playbackInterruptionSettings": {
+            
+            },
+            "dtmfSettings": {
+              "useSystemEntityRule": false
+            }
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Aby dokonać oceny zalania wysokości szkody na suficie, potrzebuję szczegółowych informacji." ]
+      },
+      "languageCode": "pl"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "sciana",
+    "name": "e55303bf-de70-41cb-8136-3de70d1c1428"
+  } ]
+}

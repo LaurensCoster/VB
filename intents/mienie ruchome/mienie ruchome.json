@@ -1,0 +1,20 @@
+{
+  "name": "5a376c16-dad5-4745-b8da-c9b44e906024",
+  "displayName": "mienie ruchome",
+  "parameters": [ {
+    "id": "person",
+    "entityType": "@sys.person"
+  }, {
+    "id": "location",
+    "entityType": "@sys.location"
+  }, {
+    "id": "last-name",
+    "entityType": "@sys.last-name"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-contextual",
+    "value": "sys-contextual"
+  } ],
+  "numTrainingPhrases": 4
+}

@@ -1,22 +1,15 @@
 {
-  "name": "00000000-0000-0000-0000-000000000000",
-  "displayName": "Default Start Flow",
-  "description": "A start flow created along with the agent",
+  "name": "87dd90b2-3c75-421c-bc59-25993efd80ea",
+  "displayName": "petla",
   "transitionRoutes": [ {
-    "intent": "Default Welcome Intent",
+    "condition": "True",
     "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "Cześć!", "Witaj!", "Dzień dobry!", "Witam!" ]
-        },
-        "languageCode": "pl"
-      } ]
+    
     },
-    "targetFlow": "sufit",
-    "name": "799f4921-6587-447e-a0e0-0e75b75ebae8"
+    "targetPage": "pomieszczenie",
+    "name": "06b3b753-687e-4be6-a5dd-a22f12f4775f"
   } ],
   "eventHandlers": [ {
-    "targetFlow": "Autentykacja",
     "event": "sys.no-match-default",
     "triggerFulfillment": {
       "messages": [ {
@@ -26,9 +19,8 @@
         "languageCode": "pl"
       } ]
     },
-    "name": "c69329b5-8ada-47c7-b813-0a80ab6f739b"
+    "name": "77075ba7-8853-4f31-972a-2bdef07d390d"
   }, {
-    "targetFlow": "Autentykacja",
     "event": "sys.no-input-default",
     "triggerFulfillment": {
       "messages": [ {
@@ -38,7 +30,7 @@
         "languageCode": "pl"
       } ]
     },
-    "name": "d53bf9a3-0dce-4f46-896c-9a310e8084be"
+    "name": "f2875c67-58ba-4e6a-b005-140c0b2cf0e1"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
@@ -47,7 +39,7 @@
   "nluSettingsList": [ {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
-    "customConfigKey": "fb96b6fe-14dc-4a31-9c9c-bd06301906d2",
+    "customConfigKey": "498b1ab0-d48b-4380-965a-cce79bf33e38",
     "languageCode": "pl"
   } ]
 }
