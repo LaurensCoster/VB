@@ -1,0 +1,22 @@
+{
+  "name": "0b025e56-655c-4302-8b2c-100d896db45c",
+  "displayName": "czy panele",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$sys.func.CONTAIN($session.params.wykonczenie_podloga, \"panele\") = True",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "panele",
+    "name": "d54dcf2c-116c-40d0-9ac7-386960ff0e08"
+  }, {
+    "condition": "$sys.func.CONTAIN($session.params.wykonczenie_podloga, \"panele\") = False",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "uszkodzenia",
+    "name": "dbc967bf-76ef-4d93-bb7b-d48354ad0f11"
+  } ]
+}

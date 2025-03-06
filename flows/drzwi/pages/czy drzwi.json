@@ -1,0 +1,38 @@
+{
+  "name": "37e3705d-fe7c-4f0b-9061-259e6763a4de",
+  "displayName": "czy drzwi",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Czy zostały uszkodzone drzwi?" ]
+      },
+      "languageCode": "pl"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "No intent",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "mienie ruchome",
+    "name": "55845727-4d51-442b-b22d-933d1caee266"
+  }, {
+    "intent": "Yes intent",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "rodzaj drzwi",
+    "name": "287fc0d7-fa92-41a2-a360-353e9d1e7145"
+  } ]
+}

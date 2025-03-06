@@ -2,6 +2,74 @@
   "name": "fad90a95-5217-45fe-bc7e-9d1236b6bc25",
   "displayName": "wykonczenie",
   "form": {
-  
-  }
+    "parameters": [ {
+      "displayName": "wykonczenie_podloga",
+      "required": true,
+      "entityType": "@wykonczenie_podloga",
+      "isList": true,
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Jakie wykończenie zostało zastosowane na podłodze w miejscu szkody? Na przykład panele laminowane,\nterakota, drewno." ]
+            },
+            "languageCode": "pl"
+          } ],
+          "advancedSettings": {
+            "playbackInterruptionSettings": {
+            
+            },
+            "dtmfSettings": {
+              "useSystemEntityRule": false
+            }
+          }
+        }
+      },
+      "convertPhoneticAlphabets": true
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Skupmy się teraz na podłodze w miejscu, gdzie doszło do szkody." ]
+      },
+      "languageCode": "pl"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\" AND $sys.func.CONTAIN($session.params.wykonczenie_podloga, \"wykladzina\") = True",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "wykladzina",
+    "name": "dfd19af9-0cda-47bc-8369-0f65ccabdf52"
+  }, {
+    "condition": "$page.params.status = \"FINAL\" AND $sys.func.CONTAIN($session.params.wykonczenie_podloga, \"wykladzina\") = False",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$session.params.wykonczenie_podloga" ]
+        },
+        "languageCode": "pl"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "targetPage": "czy panele",
+    "name": "23acd508-d7dc-46e2-b1ed-d56e69ebc19c"
+  } ]
 }

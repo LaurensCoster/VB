@@ -2,6 +2,61 @@
   "name": "e6b8db58-43ae-4b8d-af7a-4c36b0e60f9f",
   "displayName": "wykonczenie",
   "form": {
-  
-  }
+    "parameters": [ {
+      "displayName": "wukonczenie_sciana",
+      "required": true,
+      "entityType": "@wykonczenie_sciana",
+      "isList": true,
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Czym jest wykończona ściana? Na przykład farba, tapeta, glazura, boazeria." ]
+            },
+            "languageCode": "pl"
+          } ],
+          "advancedSettings": {
+            "playbackInterruptionSettings": {
+            
+            },
+            "dtmfSettings": {
+              "useSystemEntityRule": false
+            }
+          }
+        }
+      },
+      "convertPhoneticAlphabets": true
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Aby dokonać oceny wysokości szkody na ścianie, potrzebuję szczegółowych informacji." ]
+      },
+      "languageCode": "pl"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\" AND $sys.func.CONTAIN($session.params.wykonczenie_sciana, \"farba\") = True",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "farba",
+    "name": "0f1e32c5-6891-4dbb-bb7e-07e40c67b48d"
+  }, {
+    "condition": "$page.params.status = \"FINAL\" AND $sys.func.CONTAIN($session.params.wykonczenie_sciana, \"farba\") = False",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "czy kafelki",
+    "name": "dff75c04-0f46-496d-b6e0-9a20a18de2d9"
+  } ]
 }

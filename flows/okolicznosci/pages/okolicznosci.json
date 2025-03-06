@@ -48,7 +48,7 @@
     "targetFlow": "zakres szkody",
     "name": "c9a8299d-993c-431e-84ac-4fe24adfc46f"
   }, {
-    "condition": "$page.params.status != \"FINAL\" AND $session.params.counter = 0",
+    "condition": "$page.params.status = \"FINAL\" AND $session.params.counter = 0",
     "triggerFulfillment": {
       "setParameterActions": [ {
         "parameter": "counter",
@@ -66,7 +66,7 @@
     "targetPage": "ponowna prosba okolicznosci",
     "name": "04cc3519-4ef6-40d2-a1f3-9fddeaa93e5f"
   }, {
-    "condition": "$page.params.status != \"FINAL\" AND $session.params.counter = 1",
+    "condition": "$page.params.status = \"FINAL\" AND $session.params.counter = 1",
     "triggerFulfillment": {
     
     },

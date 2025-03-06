@@ -1,13 +1,13 @@
 {
-  "name": "771ff5cd-1d74-404e-aba2-12ee1676ac1b",
-  "displayName": "drzwi",
+  "name": "ea415fa2-78e8-4907-bc9a-1e72b83963e6",
+  "displayName": "koniec petli pokoi",
   "transitionRoutes": [ {
     "condition": "True",
     "triggerFulfillment": {
     
     },
-    "targetPage": "czy drzwi",
-    "name": "cf425dcd-b483-4305-a853-5c14448e77d4"
+    "targetPage": "czy kolejne pomieszczenie",
+    "name": "5f120bcc-8af1-40e9-9cd4-08f8b6c23410"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
@@ -19,7 +19,7 @@
         "languageCode": "pl"
       } ]
     },
-    "name": "67da1996-fb5e-471d-82e8-12854bfc79f3"
+    "name": "015a9d04-ccfb-4031-be82-72442a0907d6"
   }, {
     "event": "sys.no-input-default",
     "triggerFulfillment": {
@@ -30,16 +30,27 @@
         "languageCode": "pl"
       } ]
     },
-    "name": "735c8157-9746-4fda-8334-97960b30bf73"
+    "name": "8ea2127f-0d08-4c57-93c3-b20ff2d34f1e"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
-    "classificationThreshold": 0.30000001
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true
   },
   "nluSettingsList": [ {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
-    "customConfigKey": "306c515a-0939-42e6-8203-233aff02bc09",
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "customConfigKey": "1b40f243-9936-4a30-953b-f4533763ea7a",
+    "multiIntentSettings": {
+    
+    },
     "languageCode": "pl"
   } ]
 }

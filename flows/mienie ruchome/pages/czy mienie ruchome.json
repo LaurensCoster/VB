@@ -1,0 +1,55 @@
+{
+  "name": "e66435e3-dc75-43d2-8b5b-314ca2135063",
+  "displayName": "czy mienie ruchome",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Czy w tym pokoju zostało uszkodzone jakieś mienie ruchome?" ]
+      },
+      "languageCode": "pl"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "No intent",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "koniec petli pokoi",
+    "name": "0e7eaa13-34c5-4432-bdf5-f0375766b12a"
+  }, {
+    "intent": "Yes intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Po kolei zapytam jakie dokładnie przedmioty zostały uszkodzone i w jaki sposób." ]
+        },
+        "languageCode": "pl"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "counter",
+        "value": 1
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "targetPage": "petla mienie ruchome",
+    "name": "939a5a31-0ec2-4db9-8aea-100b550423b2"
+  } ]
+}

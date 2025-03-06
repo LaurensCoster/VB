@@ -41,7 +41,20 @@
   "transitionRoutes": [ {
     "condition": "$page.params.status = \"FINAL\"",
     "triggerFulfillment": {
-    
+      "messages": [ {
+        "text": {
+          "text": [ "$session.params.miejsce_zacieku" ]
+        },
+        "languageCode": "pl"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
     },
     "targetFlow": "sufit",
     "name": "75bc7ce4-cbce-4beb-9f9e-4955fafa0566"

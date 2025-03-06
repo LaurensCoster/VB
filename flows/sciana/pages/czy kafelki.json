@@ -1,0 +1,22 @@
+{
+  "name": "f7174046-f816-4a89-8afd-036ac18bb807",
+  "displayName": "czy kafelki",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$sys.func.CONTAIN($session.params.wykonczenie_sciana, \"kafelki\") = True",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "kafelki",
+    "name": "b2b8143f-24a0-42e8-8aac-7f326e199c52"
+  }, {
+    "condition": "$sys.func.CONTAIN($session.params.wykonczenie_sciana, \"kafelki\") = False",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "uszkodzenia",
+    "name": "0158406c-746b-4c32-9fd6-f6c8d344c1b7"
+  } ]
+}

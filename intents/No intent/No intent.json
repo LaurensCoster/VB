@@ -1,0 +1,14 @@
+{
+  "name": "32c42f4f-f3dc-4f5d-a96b-ca4fc57896ff",
+  "displayName": "No intent",
+  "parameters": [ {
+    "id": "language",
+    "entityType": "@sys.language"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-contextual",
+    "value": "sys-contextual"
+  } ],
+  "numTrainingPhrases": 1
+}

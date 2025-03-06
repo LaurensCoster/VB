@@ -1,0 +1,56 @@
+{
+  "name": "2e29e680-69c5-4fe2-875f-5be55573de91",
+  "displayName": "czy więcej uszkodzen",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Czy w tym pokoju jest więcej uszkodzonych przedmiotów?" ]
+      },
+      "languageCode": "pl"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "No intent",
+    "triggerFulfillment": {
+      "webhook": "petla-mienie-ruchome",
+      "tag": "petla-mienie-ruchome",
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "targetFlow": "koniec petli pokoi",
+    "name": "a5ce5b46-d5e2-45b1-90bf-5c412dea1ccb"
+  }, {
+    "intent": "Yes intent",
+    "triggerFulfillment": {
+      "webhook": "petla-mienie-ruchome",
+      "tag": "petla-mienie-ruchome",
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "targetPage": "petla mienie ruchome",
+    "name": "9b0db2fc-602e-4a53-b3d9-b25b8e37acc6"
+  } ]
+}

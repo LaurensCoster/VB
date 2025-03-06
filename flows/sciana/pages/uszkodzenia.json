@@ -1,16 +1,16 @@
 {
-  "name": "0840076e-309a-41c6-b3ad-6e8b300f858a",
-  "displayName": "wykladzina",
+  "name": "7fe9fbcf-ea0b-4a95-af14-4db055c3c85c",
+  "displayName": "uszkodzenia",
   "form": {
     "parameters": [ {
-      "displayName": "wykladzina",
+      "displayName": "inne_sciana",
       "required": true,
       "entityType": "@sys.any",
       "fillBehavior": {
         "initialPromptFulfillment": {
           "messages": [ {
             "text": {
-              "text": [ "Proszę o wskazanie jakiego rodzaju wykładzina jest położona na podłodze? Dywanowa czy PCV?" ]
+              "text": [ "Czy uszkodzenie dotyczy tylko wykończenia, czy również samej konstrukcji ściany? Na przykład odpadła tylko\nfarba, pękł tynk, widać cegły." ]
             },
             "languageCode": "pl"
           } ],
@@ -32,7 +32,7 @@
     "triggerFulfillment": {
     
     },
-    "targetPage": "czy panele",
-    "name": "69030556-277d-4fd8-898d-e43c76b6def7"
+    "targetFlow": "podloga",
+    "name": "a7f3b011-8844-47a5-a409-27287c1b5684"
   } ]
 }

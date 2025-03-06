@@ -1,16 +1,16 @@
 {
-  "name": "04fbaaa7-a8cb-4555-9511-20ea25d0bae7",
-  "displayName": "farba",
+  "name": "bfafef08-66a1-4ee2-8c69-16bf39a79a00",
+  "displayName": "charakter uszkodzen",
   "form": {
     "parameters": [ {
-      "displayName": "rodzaj_farby",
+      "displayName": "charakter_uszkodzen",
       "required": true,
       "entityType": "@sys.any",
       "fillBehavior": {
         "initialPromptFulfillment": {
           "messages": [ {
             "text": {
-              "text": [ "Jaki jest rodzaj farby? Na przykład akrylowa, lateksowa, emulsyjna." ]
+              "text": [ "Jaki jest charakter uszkodzeń? Na przykład zarysowania, pęknięcia, odkształcenia." ]
             },
             "languageCode": "pl"
           } ],
@@ -26,14 +26,14 @@
       },
       "convertPhoneticAlphabets": true
     }, {
-      "displayName": "kolor_farby",
+      "displayName": "lokalizacja_uszkodzen",
       "required": true,
       "entityType": "@sys.any",
       "fillBehavior": {
         "initialPromptFulfillment": {
           "messages": [ {
             "text": {
-              "text": [ "Jaki jest kolor farby? Biała czy kolorowa?" ]
+              "text": [ "Jaka jest lokalizacja uszkodzeń na przedmiocie: Na przykład lewy górny róg ekranu telewizora, oparcie sofy." ]
             },
             "languageCode": "pl"
           } ],
@@ -55,7 +55,7 @@
     "triggerFulfillment": {
     
     },
-    "targetPage": "czy kafelki",
-    "name": "87cd1770-e3b3-4428-88a0-3f08759de9dc"
+    "targetPage": "czy więcej uszkodzen",
+    "name": "fcc319d4-a3a1-4003-a96d-ce4175384593"
   } ]
 }

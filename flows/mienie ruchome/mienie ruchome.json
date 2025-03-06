@@ -1,13 +1,13 @@
 {
-  "name": "771ff5cd-1d74-404e-aba2-12ee1676ac1b",
-  "displayName": "drzwi",
+  "name": "b017c8c6-1945-4558-9928-8b11dbc0d07f",
+  "displayName": "mienie ruchome",
   "transitionRoutes": [ {
     "condition": "True",
     "triggerFulfillment": {
     
     },
-    "targetPage": "czy drzwi",
-    "name": "cf425dcd-b483-4305-a853-5c14448e77d4"
+    "targetPage": "czy mienie ruchome",
+    "name": "27d162de-7b97-440a-8a2d-2fb9dda6ac79"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
@@ -19,7 +19,7 @@
         "languageCode": "pl"
       } ]
     },
-    "name": "67da1996-fb5e-471d-82e8-12854bfc79f3"
+    "name": "59626af6-6594-48ab-8e95-b60546a317c9"
   }, {
     "event": "sys.no-input-default",
     "triggerFulfillment": {
@@ -30,7 +30,7 @@
         "languageCode": "pl"
       } ]
     },
-    "name": "735c8157-9746-4fda-8334-97960b30bf73"
+    "name": "3854f846-4e1c-49c0-93fa-ce096c2d167d"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
@@ -39,7 +39,7 @@
   "nluSettingsList": [ {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
-    "customConfigKey": "306c515a-0939-42e6-8203-233aff02bc09",
+    "customConfigKey": "02304f93-70dc-4003-8b9d-d31c19e1dee5",
     "languageCode": "pl"
   } ]
 }

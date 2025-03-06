@@ -2,6 +2,37 @@
   "name": "504a425e-73a5-45cd-b6d9-f74181d9f714",
   "displayName": "panele",
   "form": {
-  
-  }
+    "parameters": [ {
+      "displayName": "panele",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Jaki jest rodzaj paneli? Klik czy klejone?" ]
+            },
+            "languageCode": "pl"
+          } ],
+          "advancedSettings": {
+            "playbackInterruptionSettings": {
+            
+            },
+            "dtmfSettings": {
+              "useSystemEntityRule": false
+            }
+          }
+        }
+      },
+      "convertPhoneticAlphabets": true
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "uszkodzenia",
+    "name": "9bd3376c-4e04-4186-ae49-935e70e89627"
+  } ]
 }

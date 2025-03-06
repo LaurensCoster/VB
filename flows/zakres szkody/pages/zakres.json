@@ -7,7 +7,7 @@
   "entryFulfillment": {
     "messages": [ {
       "text": {
-        "text": [ "Jeżeli szkoda nie wystąpiła w pomieszczeniu, a tylko w przedmiotach wskaż, że dotyczy ona mienia\r\nruchomego" ]
+        "text": [ "Jeżeli szkoda nie wystąpiła w pomieszczeniu, a tylko w przedmiotach wskaż, że dotyczy ona mienia ruchomego" ]
       },
       "languageCode": "pl"
     } ],
@@ -32,7 +32,7 @@
         }
       }
     },
-    "targetPage": "czy drzwi",
+    "targetFlow": "drzwi",
     "name": "8cc1f79e-e17f-4bb7-80e1-54e8a15c578c"
   }, {
     "intent": "pomieszczenie",

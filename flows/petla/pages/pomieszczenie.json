@@ -21,7 +21,7 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Teraz skupmy się na pomieszczeniu jakim jest $session.params.pomieszczenie\r\nZaraz zapytamy o szacunkowe wymiary tego pomieszczenia - długość, szerokość i wysokość. Nie muszą być idealnie\r\ndokładne, chodzi o przybliżone wartości w metrach." ]
+          "text": [ "Teraz skupmy się na pomieszczeniu jakim jest $session.params.pomieszczenie.\nZaraz zapytamy o szacunkowe wymiary tego pomieszczenia - długość, szerokość i wysokość. Nie muszą być idealnie dokładne, chodzi o przybliżone wartości w metrach." ]
         },
         "languageCode": "pl"
       } ],

@@ -1,0 +1,84 @@
+{
+  "name": "8b5ebb18-650a-47ba-85ba-b200fb5e10f1",
+  "displayName": "wymiary",
+  "form": {
+    "parameters": [ {
+      "displayName": "szerkosc_drzwi",
+      "required": true,
+      "entityType": "@sys.number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Proszę podać przybliżoną szerokość drzwi w metrach." ]
+            },
+            "languageCode": "pl"
+          } ],
+          "advancedSettings": {
+            "playbackInterruptionSettings": {
+            
+            },
+            "dtmfSettings": {
+              "useSystemEntityRule": false
+            }
+          }
+        }
+      },
+      "convertPhoneticAlphabets": true
+    }, {
+      "displayName": "wysokosc_drzwi",
+      "required": true,
+      "entityType": "@sys.number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Proszę podać przybliżoną wysokość drzwi w metrach." ]
+            },
+            "languageCode": "pl"
+          } ],
+          "advancedSettings": {
+            "playbackInterruptionSettings": {
+            
+            },
+            "dtmfSettings": {
+              "useSystemEntityRule": false
+            }
+          }
+        }
+      },
+      "convertPhoneticAlphabets": true
+    }, {
+      "displayName": "grubosc_drzwi",
+      "required": true,
+      "entityType": "@sys.number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Proszę podać przybliżoną grubość drzwi w centymetrach." ]
+            },
+            "languageCode": "pl"
+          } ],
+          "advancedSettings": {
+            "playbackInterruptionSettings": {
+            
+            },
+            "dtmfSettings": {
+              "useSystemEntityRule": false
+            }
+          }
+        }
+      },
+      "convertPhoneticAlphabets": true
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "mienie ruchome",
+    "name": "40efa8cf-ccbc-4063-9024-1bb6d69e0a68"
+  } ]
+}

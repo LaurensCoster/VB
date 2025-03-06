@@ -1,0 +1,27 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Dobrze"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "Zgadza się"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "Jasne"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "Tak"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  } ]
+}

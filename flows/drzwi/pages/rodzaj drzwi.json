@@ -1,16 +1,16 @@
 {
-  "name": "04fbaaa7-a8cb-4555-9511-20ea25d0bae7",
-  "displayName": "farba",
+  "name": "394a9e72-e879-418a-a049-95d355fc79bb",
+  "displayName": "rodzaj drzwi",
   "form": {
     "parameters": [ {
-      "displayName": "rodzaj_farby",
+      "displayName": "rodzaj_drzwi",
       "required": true,
       "entityType": "@sys.any",
       "fillBehavior": {
         "initialPromptFulfillment": {
           "messages": [ {
             "text": {
-              "text": [ "Jaki jest rodzaj farby? Na przykład akrylowa, lateksowa, emulsyjna." ]
+              "text": [ "Jaki jest rodzaj drzwi? Na przykład drzwi wejściowe, drzwi wewnętrzne, drzwi balkonowe, drzwi przesuwne,\npełne czy przeszklone." ]
             },
             "languageCode": "pl"
           } ],
@@ -26,14 +26,14 @@
       },
       "convertPhoneticAlphabets": true
     }, {
-      "displayName": "kolor_farby",
+      "displayName": "uszkodzenia_drzwi",
       "required": true,
       "entityType": "@sys.any",
       "fillBehavior": {
         "initialPromptFulfillment": {
           "messages": [ {
             "text": {
-              "text": [ "Jaki jest kolor farby? Biała czy kolorowa?" ]
+              "text": [ "Proszę podać szczegółowy opis uszkodzeń. Na przykład deformacja ościeżnicy." ]
             },
             "languageCode": "pl"
           } ],
@@ -50,12 +50,28 @@
       "convertPhoneticAlphabets": true
     } ]
   },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "W celu przeprowadzenia rzetelnej oceny szkód, niezbędne jest uzyskanie szczegółowych danych dotyczących uszkodzonych drzwi." ]
+      },
+      "languageCode": "pl"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
   "transitionRoutes": [ {
     "condition": "$page.params.status = \"FINAL\"",
     "triggerFulfillment": {
     
     },
-    "targetPage": "czy kafelki",
-    "name": "87cd1770-e3b3-4428-88a0-3f08759de9dc"
+    "targetPage": "wymiary",
+    "name": "97911643-1c72-4334-8f17-eebfb391cac7"
   } ]
 }
