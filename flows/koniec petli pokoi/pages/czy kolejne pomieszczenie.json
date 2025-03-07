@@ -4,15 +4,27 @@
   "form": {
   
   },
+  "entryFulfillment": {
+    "webhook": "zapisanie-danych",
+    "tag": "lazienka",
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
   "transitionRoutes": [ {
-    "condition": "$session.params.loop_counter != $session.ilosc_pomieszczen",
+    "condition": "$session.params.loop_counter != $session.params.ilosc_pomieszczen+1",
     "triggerFulfillment": {
     
     },
     "targetFlow": "petla",
     "name": "0a729fc0-e337-4a31-8781-dfdc3c822d30"
   }, {
-    "condition": "$session.params.loop_counter = $session.ilosc_pomieszczen",
+    "condition": "$session.params.loop_counter = $session.params.ilosc_pomieszczen",
     "triggerFulfillment": {
     
     },

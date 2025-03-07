@@ -2,11 +2,38 @@
   "name": "ec519f4a-d984-4e93-a66c-bab442033b15",
   "displayName": "pomieszczenie",
   "form": {
-  
+    "parameters": [ {
+      "displayName": "nazwa_pomieszczenia",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Jak nazywa się to pomieszczenie?" ]
+            },
+            "languageCode": "pl"
+          } ],
+          "advancedSettings": {
+            "playbackInterruptionSettings": {
+            
+            },
+            "dtmfSettings": {
+              "useSystemEntityRule": false
+            }
+          }
+        }
+      },
+      "convertPhoneticAlphabets": true
+    } ]
   },
   "entryFulfillment": {
-    "webhook": "petla_pomieszczenia",
-    "tag": "petla-pomieszczenia",
+    "messages": [ {
+      "text": {
+        "text": [ "Teraz skupmy się na pomieszczeniu numer $session.params.loop_counter." ]
+      },
+      "languageCode": "pl"
+    } ],
     "advancedSettings": {
       "playbackInterruptionSettings": {
       
@@ -17,14 +44,8 @@
     }
   },
   "transitionRoutes": [ {
-    "condition": "True",
+    "condition": "$page.params.status = \"FINAL\"",
     "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "Teraz skupmy się na pomieszczeniu jakim jest $session.params.pomieszczenie.\nZaraz zapytamy o szacunkowe wymiary tego pomieszczenia - długość, szerokość i wysokość. Nie muszą być idealnie dokładne, chodzi o przybliżone wartości w metrach." ]
-        },
-        "languageCode": "pl"
-      } ],
       "advancedSettings": {
         "playbackInterruptionSettings": {
         

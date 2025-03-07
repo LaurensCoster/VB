@@ -43,6 +43,10 @@
   "transitionRoutes": [ {
     "condition": "$page.params.status = \"FINAL\"",
     "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "loop_counter",
+        "value": 1
+      } ],
       "advancedSettings": {
         "playbackInterruptionSettings": {
         
@@ -52,7 +56,7 @@
         }
       }
     },
-    "targetPage": "nazwy pomieszczen",
+    "targetFlow": "petla",
     "name": "2a84f53f-f711-4f9e-b9dd-2c4488430e87"
   } ]
 }

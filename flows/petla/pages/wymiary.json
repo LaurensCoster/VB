@@ -70,6 +70,22 @@
       }
     } ]
   },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Zaraz zapytamy o szacunkowe wymiary tego pomieszczenia - długość, szerokość i wysokość. Nie muszą być idealnie dokładne, chodzi o przybliżone wartości w metrach." ]
+      },
+      "languageCode": "pl"
+    } ],
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
   "transitionRoutes": [ {
     "condition": "$page.params.status = \"FINAL\"",
     "triggerFulfillment": {

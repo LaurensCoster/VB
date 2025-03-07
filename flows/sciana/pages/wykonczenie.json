@@ -3,7 +3,7 @@
   "displayName": "wykonczenie",
   "form": {
     "parameters": [ {
-      "displayName": "wukonczenie_sciana",
+      "displayName": "wykonczenie_sciana",
       "required": true,
       "entityType": "@wykonczenie_sciana",
       "isList": true,

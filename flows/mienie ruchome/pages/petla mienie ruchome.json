@@ -33,7 +33,7 @@
         "initialPromptFulfillment": {
           "messages": [ {
             "text": {
-              "text": [ "Jaka to marka i model? Na przykład Samsung model RB34T600ESA." ]
+              "text": [ "Jaka to marka i model? Na przykład Samsung model X." ]
             },
             "languageCode": "pl"
           } ],

@@ -2,12 +2,19 @@
   "name": "771ff5cd-1d74-404e-aba2-12ee1676ac1b",
   "displayName": "drzwi",
   "transitionRoutes": [ {
-    "condition": "True",
+    "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"drzwi\") = True",
     "triggerFulfillment": {
     
     },
-    "targetPage": "czy drzwi",
+    "targetPage": "rodzaj drzwi",
     "name": "cf425dcd-b483-4305-a853-5c14448e77d4"
+  }, {
+    "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"drzwi\") = False",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "mienie ruchome",
+    "name": "e239400e-357d-4fb9-9083-679f350c57ea"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",

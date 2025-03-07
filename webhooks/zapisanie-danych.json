@@ -1,0 +1,11 @@
+{
+  "name": "2bac8f6b-21e3-4c89-b512-bfec4f4b1be1",
+  "displayName": "zapisanie-danych",
+  "genericWebService": {
+    "uri": "https://zapisanie-danych-73383908694.us-central1.run.app",
+    "webhookType": "STANDARD"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

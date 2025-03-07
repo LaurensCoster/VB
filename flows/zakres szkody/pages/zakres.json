@@ -7,7 +7,7 @@
   "entryFulfillment": {
     "messages": [ {
       "text": {
-        "text": [ "Jeżeli szkoda nie wystąpiła w pomieszczeniu, a tylko w przedmiotach wskaż, że dotyczy ona mienia ruchomego" ]
+        "text": [ "Czy szkoda wystąpiła tylko w mieniu ruchomym czy również w pomieszczeniach?" ]
       },
       "languageCode": "pl"
     } ],
