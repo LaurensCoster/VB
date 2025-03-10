@@ -2,5 +2,6 @@
   "name": "13b1ddbb-642e-4512-9798-43af6c256530",
   "displayName": "miejsce_zacieku",
   "kind": "KIND_MAP",
+  "autoExpansionMode": "AUTO_EXPANSION_MODE_DEFAULT",
   "enableFuzzyExtraction": true
 }

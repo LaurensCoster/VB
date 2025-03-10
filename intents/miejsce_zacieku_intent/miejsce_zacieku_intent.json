@@ -1,0 +1,24 @@
+{
+  "name": "5fa7321a-510c-4481-82b4-706c42ec14a7",
+  "displayName": "miejsce_zacieku_intent",
+  "parameters": [ {
+    "id": "miejsce_zacieku",
+    "entityType": "@miejsce_zacieku"
+  }, {
+    "id": "miejsce_zacieku1",
+    "entityType": "@miejsce_zacieku"
+  }, {
+    "id": "miejsce_zacieku2",
+    "entityType": "@miejsce_zacieku"
+  }, {
+    "id": "miejsce_zacieku3",
+    "entityType": "@miejsce_zacieku"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-contextual",
+    "value": "sys-contextual"
+  } ],
+  "description": "Wykrywa gdzie jest miejsce zacieku w pomieszczeniu.",
+  "numTrainingPhrases": 7
+}

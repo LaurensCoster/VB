@@ -1,0 +1,6 @@
+{
+  "promptTexts": [ {
+    "text": "Na pytanie 'Gdzie jest zaciek?', użytkownik odpowiedział: $last-user-utterance. Proszę wypisać wszystkie miejsca, które użytkownik wymienia, w formie listy. Miejsca mogą obejmować tylko: sufit, ściana, podłoga, drzwi. Odpowiedź powinna mieć postać listy.\n\nNa pytanie 'Gdzie jest zaciek?', użytkownik odpowiedział: 'Zaciek jest na suficie i na ścianie w pobliżu drzwi.' Proszę wypisać wszystkie miejsca, które użytkownik wymienia, w formie listy. Miejsca mogą obejmować: sufit, ściana, podłoga, drzwi, oraz inne ewentualne lokalizacje. Odpowiedź powinna mieć postać listy:\n[\"sufit\", \"ściana\", \"drzwi\"]",
+    "languageCode": "pl"
+  } ]
+}

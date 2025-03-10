@@ -1,0 +1,11 @@
+{
+  "name": "352debe5-5e62-4695-9a34-d114d2872d27",
+  "displayName": "detect-entity",
+  "genericWebService": {
+    "uri": "https://detect-entity-73383908694.us-central1.run.app",
+    "webhookType": "STANDARD"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

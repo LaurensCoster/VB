@@ -1,0 +1,24 @@
+{
+  "name": "65ad00c5-9b6b-4e0e-8c1d-2663ef87b6f2",
+  "displayName": "przypisanie miejsc",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "True",
+    "triggerFulfillment": {
+      "webhook": "str-to-list",
+      "tag": "miejsce_zacieku",
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "targetFlow": "sufit",
+    "name": "df230c44-a78f-46e9-b245-b747ea98b99d"
+  } ]
+}

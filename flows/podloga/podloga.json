@@ -2,14 +2,14 @@
   "name": "9546d4e8-b398-4c7e-809e-97461adc843a",
   "displayName": "podloga",
   "transitionRoutes": [ {
-    "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"podloga\") = True",
+    "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"podłoga\") = True",
     "triggerFulfillment": {
     
     },
     "targetPage": "wykonczenie",
     "name": "906dcd38-0bc3-482c-956b-15cd30766df3"
   }, {
-    "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"podloga\") = False",
+    "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"podłoga\") = False",
     "triggerFulfillment": {
     
     },

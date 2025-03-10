@@ -4,7 +4,20 @@
   "transitionRoutes": [ {
     "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"sufit\") = True",
     "triggerFulfillment": {
-    
+      "messages": [ {
+        "text": {
+          "text": [ "$session.params.miejsce_zacieku" ]
+        },
+        "languageCode": "pl"
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
     },
     "targetPage": "wykonczenie",
     "name": "1d737522-9f0b-40d9-8168-80e2b54e100c"

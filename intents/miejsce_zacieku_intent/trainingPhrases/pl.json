@@ -1,0 +1,137 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Na ",
+      "auto": true
+    }, {
+      "text": "ścianie",
+      "parameterId": "miejsce_zacieku",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "Zalane",
+      "auto": true
+    }, {
+      "text": " są ",
+      "auto": true
+    }, {
+      "text": "drzwi",
+      "parameterId": "miejsce_zacieku",
+      "auto": true
+    }, {
+      "text": " i ",
+      "auto": true
+    }, {
+      "text": "ściana",
+      "parameterId": "miejsce_zacieku1",
+      "auto": true
+    }, {
+      "text": ".",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "Zaciek znajduje ",
+      "auto": true
+    }, {
+      "text": "się",
+      "auto": true
+    }, {
+      "text": " przy ",
+      "auto": true
+    }, {
+      "text": "drzwiach",
+      "parameterId": "miejsce_zacieku",
+      "auto": true
+    }, {
+      "text": ".",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "Przy "
+    }, {
+      "text": "oknie",
+      "parameterId": "miejsce_zacieku",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "Na środku ",
+      "auto": true
+    }, {
+      "text": "podłogi",
+      "parameterId": "miejsce_zacieku",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "Wrogu ",
+      "auto": true
+    }, {
+      "text": "ściany",
+      "parameterId": "miejsce_zacieku",
+      "auto": true
+    }, {
+      "text": " i ",
+      "auto": true
+    }, {
+      "text": "sufitu",
+      "parameterId": "miejsce_zacieku1",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  }, {
+    "parts": [ {
+      "text": "Zaciek znajduje się na środku ",
+      "auto": true
+    }, {
+      "text": "sufitu",
+      "parameterId": "miejsce_zacieku",
+      "auto": true
+    }, {
+      "text": " w łazience i na ",
+      "auto": true
+    }, {
+      "text": "podłodze",
+      "parameterId": "miejsce_zacieku1",
+      "auto": true
+    }, {
+      "text": " w ",
+      "auto": true
+    }, {
+      "text": "rogu i"
+    }, {
+      "text": " przy ",
+      "auto": true
+    }, {
+      "text": "oknie",
+      "parameterId": "miejsce_zacieku2",
+      "auto": true
+    }, {
+      "text": " na ",
+      "auto": true
+    }, {
+      "text": "ścianie",
+      "parameterId": "miejsce_zacieku3",
+      "auto": true
+    }, {
+      "text": ".",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pl"
+  } ]
+}

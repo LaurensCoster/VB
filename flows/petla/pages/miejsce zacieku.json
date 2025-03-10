@@ -41,12 +41,6 @@
   "transitionRoutes": [ {
     "condition": "$page.params.status = \"FINAL\"",
     "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "$session.params.miejsce_zacieku" ]
-        },
-        "languageCode": "pl"
-      } ],
       "advancedSettings": {
         "playbackInterruptionSettings": {
         
@@ -54,9 +48,13 @@
         "dtmfSettings": {
           "useSystemEntityRule": false
         }
-      }
+      },
+      "generators": [ {
+        "generator": "projects/generative-ai-specialization/locations/global/agents/c330c1d3-8800-461f-b2cc-0cf3601b0831/generators/6ad2e9b3-9153-43b5-9a5d-f50a5325da5e",
+        "outputParameter": "$session.params.miejsce_zacieku"
+      } ]
     },
-    "targetFlow": "sufit",
+    "targetPage": "przypisanie miejsc",
     "name": "75bc7ce4-cbce-4beb-9f9e-4955fafa0566"
   } ]
 }

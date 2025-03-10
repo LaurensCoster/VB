@@ -2,14 +2,14 @@
   "name": "336f47bd-7dca-437c-8a03-67a0b9f9ef9a",
   "displayName": "sciana",
   "transitionRoutes": [ {
-    "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"sciana\") = True",
+    "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"ściana\") = True",
     "triggerFulfillment": {
     
     },
     "targetPage": "wykonczenie",
     "name": "40d03238-55a4-48d3-b7e5-01edc1cee6f4"
   }, {
-    "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"sciana\") = False",
+    "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"ściana\") = False",
     "triggerFulfillment": {
     
     },
