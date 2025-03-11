@@ -5,8 +5,7 @@
     "parameters": [ {
       "displayName": "wykonczenie_podloga",
       "required": true,
-      "entityType": "@wykonczenie_podloga",
-      "isList": true,
+      "entityType": "@sys.any",
       "fillBehavior": {
         "initialPromptFulfillment": {
           "messages": [ {
@@ -24,8 +23,7 @@
             }
           }
         }
-      },
-      "convertPhoneticAlphabets": true
+      }
     } ]
   },
   "entryFulfillment": {
@@ -45,21 +43,8 @@
     }
   },
   "transitionRoutes": [ {
-    "condition": "$page.params.status = \"FINAL\" AND $sys.func.CONTAIN($session.params.wykonczenie_podloga, \"wykladzina\") = True",
+    "condition": "$page.params.status = \"FINAL\"",
     "triggerFulfillment": {
-    
-    },
-    "targetPage": "wykladzina",
-    "name": "dfd19af9-0cda-47bc-8369-0f65ccabdf52"
-  }, {
-    "condition": "$page.params.status = \"FINAL\" AND $sys.func.CONTAIN($session.params.wykonczenie_podloga, \"wykladzina\") = False",
-    "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "$session.params.wykonczenie_podloga" ]
-        },
-        "languageCode": "pl"
-      } ],
       "advancedSettings": {
         "playbackInterruptionSettings": {
         
@@ -67,9 +52,13 @@
         "dtmfSettings": {
           "useSystemEntityRule": false
         }
-      }
+      },
+      "generators": [ {
+        "generator": "projects/generative-ai-specialization/locations/global/agents/c330c1d3-8800-461f-b2cc-0cf3601b0831/generators/c3f85d0a-4a93-48a0-a594-66a3fb35fbbf",
+        "outputParameter": "$session.params.wykonczenie_podloga"
+      } ]
     },
-    "targetPage": "czy panele",
-    "name": "23acd508-d7dc-46e2-b1ed-d56e69ebc19c"
+    "targetPage": "czy wykladzina",
+    "name": "dfd19af9-0cda-47bc-8369-0f65ccabdf52"
   } ]
 }

@@ -4,6 +4,16 @@
   "form": {
   
   },
+  "entryFulfillment": {
+    "advancedSettings": {
+      "playbackInterruptionSettings": {
+      
+      },
+      "dtmfSettings": {
+        "useSystemEntityRule": false
+      }
+    }
+  },
   "transitionRoutes": [ {
     "condition": "True",
     "triggerFulfillment": {

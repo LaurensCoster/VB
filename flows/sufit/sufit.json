@@ -4,12 +4,6 @@
   "transitionRoutes": [ {
     "condition": "$sys.func.CONTAIN($session.params.miejsce_zacieku, \"sufit\") = True",
     "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "$session.params.miejsce_zacieku" ]
-        },
-        "languageCode": "pl"
-      } ],
       "advancedSettings": {
         "playbackInterruptionSettings": {
         

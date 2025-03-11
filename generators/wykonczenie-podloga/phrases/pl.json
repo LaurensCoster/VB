@@ -1,0 +1,6 @@
+{
+  "promptTexts": [ {
+    "text": "Na pytanie 'Jaki jest rodzaj wykończenia sufitu?', użytkownik odpowiedział: $last-user-utterance. Proszę wypisać wszystkie wykończenia, które użytkownik wymienia, w formie listy. Wykończenia mogą obejmować tylko: panele, deska, parkiet, wykładzina, mozaika, listwy, terakota. Odpowiedź powinna mieć postać listy. \nWeź pod uwagę synonimy i kontekst. Jeśli użytkownik powie synonim traktuj to jak to wykończenie:\nterakota - płytki, kafelki\ndeska - drewno, drewniana\nPrzykład: \nDla odpowiedzi użytkownika: 'Podłoga jest częściowo z mozaiki, a częściowo z deski.' Odpowiedź w formie listy powinna wyglądać tak: '[\"mozaika\", \"deska\"]'",
+    "languageCode": "pl"
+  } ]
+}

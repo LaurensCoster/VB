@@ -5,8 +5,7 @@
     "parameters": [ {
       "displayName": "wykonczenie_sciana",
       "required": true,
-      "entityType": "@wykonczenie_sciana",
-      "isList": true,
+      "entityType": "@sys.any",
       "fillBehavior": {
         "initialPromptFulfillment": {
           "messages": [ {
@@ -24,8 +23,7 @@
             }
           }
         }
-      },
-      "convertPhoneticAlphabets": true
+      }
     } ]
   },
   "entryFulfillment": {
@@ -45,18 +43,22 @@
     }
   },
   "transitionRoutes": [ {
-    "condition": "$page.params.status = \"FINAL\" AND $sys.func.CONTAIN($session.params.wykonczenie_sciana, \"farba\") = True",
+    "condition": "$page.params.status = \"FINAL\"",
     "triggerFulfillment": {
-    
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      },
+      "generators": [ {
+        "generator": "projects/generative-ai-specialization/locations/global/agents/c330c1d3-8800-461f-b2cc-0cf3601b0831/generators/fe1e7338-9064-49b9-92ce-7df88cfdb60d",
+        "outputParameter": "$session.params.wykonczenie_sciana"
+      } ]
     },
-    "targetPage": "farba",
+    "targetPage": "czy farba",
     "name": "0f1e32c5-6891-4dbb-bb7e-07e40c67b48d"
-  }, {
-    "condition": "$page.params.status = \"FINAL\" AND $sys.func.CONTAIN($session.params.wykonczenie_sciana, \"farba\") = False",
-    "triggerFulfillment": {
-    
-    },
-    "targetPage": "czy kafelki",
-    "name": "dff75c04-0f46-496d-b6e0-9a20a18de2d9"
   } ]
 }

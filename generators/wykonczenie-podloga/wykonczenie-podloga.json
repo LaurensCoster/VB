@@ -1,0 +1,14 @@
+{
+  "name": "c3f85d0a-4a93-48a0-a594-66a3fb35fbbf",
+  "displayName": "wykonczenie-podloga",
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40,
+    "seed": 0
+  },
+  "llmModelSettings": {
+    "model": "gemini-2.0-flash-001"
+  }
+}

@@ -5,8 +5,7 @@
     "parameters": [ {
       "displayName": "miejsce_zacieku",
       "required": true,
-      "entityType": "@miejsce_zacieku",
-      "isList": true,
+      "entityType": "@sys.any",
       "fillBehavior": {
         "initialPromptFulfillment": {
           "messages": [ {
