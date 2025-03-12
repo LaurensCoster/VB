@@ -4,7 +4,14 @@
   "transitionRoutes": [ {
     "condition": "True",
     "triggerFulfillment": {
-    
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
     },
     "targetPage": "czy mienie ruchome",
     "name": "27d162de-7b97-440a-8a2d-2fb9dda6ac79"

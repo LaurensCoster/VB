@@ -4,7 +4,22 @@
   "transitionRoutes": [ {
     "condition": "True",
     "triggerFulfillment": {
-    
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      },
+      "generators": [ {
+        "generator": "projects/generative-ai-specialization/locations/global/agents/c330c1d3-8800-461f-b2cc-0cf3601b0831/generators/48e6c234-d854-4fbe-bda2-2b19cfc99149",
+        "inputParameters": [ {
+          "key": "session",
+          "value": "$session.params"
+        } ],
+        "outputParameter": "$session.params.room"
+      } ]
     },
     "targetPage": "czy kolejne pomieszczenie",
     "name": "5f120bcc-8af1-40e9-9cd4-08f8b6c23410"

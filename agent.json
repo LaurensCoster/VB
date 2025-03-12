@@ -5,19 +5,21 @@
   "enableLogging": true,
   "projectNumber": 73383908694,
   "speechToTextSettings": {
-  
+    "enableSpeechAdaptation": true
   },
   "startFlow": "Default Start Flow",
   "enableStackdriverLogging": true,
   "advancedSettings": {
+    "enabled": true,
     "audioExportGcsDestination": {
     
     },
     "speechSettings": {
-      "endpointerSensitivity": 90,
+      "endpointerSensitivity": 75,
       "noSpeechTimeout": {
         "seconds": 5
-      }
+      },
+      "useTimeoutBasedEndpointing": true
     },
     "playbackInterruptionSettings": {
     
@@ -32,6 +34,17 @@
   },
   "speakerIdSettings": {
   
+  },
+  "textToSpeechSettings": {
+    "synthesizeSpeechConfigs": [ {
+      "key": "pl",
+      "value": {
+        "voice": {
+          "name": "pl-PL-Standard-G",
+          "ssmlGender": "SSML_VOICE_GENDER_MALE"
+        }
+      }
+    } ]
   },
   "duplexSettings": {
   
