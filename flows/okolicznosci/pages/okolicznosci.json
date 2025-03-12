@@ -3,14 +3,14 @@
   "displayName": "okolicznosci",
   "form": {
     "parameters": [ {
-      "displayName": "okolicznosi",
+      "displayName": "okolicznosci",
       "required": true,
       "entityType": "@sys.any",
       "fillBehavior": {
         "initialPromptFulfillment": {
           "messages": [ {
             "text": {
-              "text": [ "Proszę opowiedzieć o swojej szkodzie  Jak doszło do szkody?\n\nNie spiesz się, opisz wszystko dokładnie, żebyśmy mieli pełen obraz sytuacji.  Każdy szczegół jest ważny, ale o wymiary szkody zapytam w kolejnym kroku." ]
+              "text": [ "Proszę opowiedzieć o swojej szkodzie. Jak doszło do szkody?\n\nNie spiesz się, opisz wszystko dokładnie, żebyśmy mieli pełen obraz sytuacji.  Każdy szczegół jest ważny, ale o wymiary szkody zapytam w kolejnym kroku." ]
             },
             "languageCode": "pl"
           } ],
@@ -30,6 +30,9 @@
     "setParameterActions": [ {
       "parameter": "okolicznosci",
       "value": null
+    }, {
+      "parameter": "loop_counter",
+      "value": 1
     } ],
     "advancedSettings": {
       "playbackInterruptionSettings": {

@@ -17,14 +17,14 @@
     }
   },
   "transitionRoutes": [ {
-    "condition": "$session.params.loop_counter != $session.params.ilosc_pomieszczen+1",
+    "condition": "$session.params.loop_counter \u003c= $session.params.ilosc_pomieszczen",
     "triggerFulfillment": {
     
     },
     "targetFlow": "petla",
     "name": "0a729fc0-e337-4a31-8781-dfdc3c822d30"
   }, {
-    "condition": "$session.params.loop_counter = $session.params.ilosc_pomieszczen",
+    "condition": "$session.params.loop_counter \u003e $session.params.ilosc_pomieszczen",
     "triggerFulfillment": {
     
     },

@@ -5,7 +5,7 @@
     "parameters": [ {
       "displayName": "wysokosc_kafelki",
       "required": true,
-      "entityType": "@sys.number",
+      "entityType": "@sys.any",
       "fillBehavior": {
         "initialPromptFulfillment": {
           "messages": [ {

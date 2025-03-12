@@ -43,10 +43,6 @@
   "transitionRoutes": [ {
     "condition": "$page.params.status = \"FINAL\"",
     "triggerFulfillment": {
-      "setParameterActions": [ {
-        "parameter": "loop_counter",
-        "value": 1
-      } ],
       "advancedSettings": {
         "playbackInterruptionSettings": {
         
