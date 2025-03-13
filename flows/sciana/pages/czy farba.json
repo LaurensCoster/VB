@@ -30,5 +30,23 @@
     },
     "targetPage": "czy kafelki",
     "name": "4185e932-dfd2-44c9-ac2a-f985d4182c5c"
+  } ],
+  "eventHandlers": [ {
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "wykonczenie_sciana",
+        "value": [ ]
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "name": "26d577bd-b36a-4a97-a2df-06d928f0b011"
   } ]
 }

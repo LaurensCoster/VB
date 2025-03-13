@@ -12,7 +12,7 @@
         "languageCode": "pl"
       } ]
     },
-    "targetFlow": "okolicznosci",
+    "targetFlow": "Autentykacja",
     "name": "799f4921-6587-447e-a0e0-0e75b75ebae8"
   } ],
   "eventHandlers": [ {

@@ -30,5 +30,23 @@
     },
     "targetFlow": "sufit",
     "name": "df230c44-a78f-46e9-b245-b747ea98b99d"
+  } ],
+  "eventHandlers": [ {
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "miejsce_zacieku",
+        "value": [ ]
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "name": "34781626-f1ab-4d1a-b66a-ac8773cb22af"
   } ]
 }

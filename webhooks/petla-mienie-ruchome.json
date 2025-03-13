@@ -2,7 +2,7 @@
   "name": "37366a22-2a8b-4911-97d3-536865a30600",
   "displayName": "petla-mienie-ruchome",
   "genericWebService": {
-    "uri": "https://petla-mienie-ruchome-73383908694.us-central1.run.app",
+    "uri": "https://belongings-loop-882900569176.europe-west1.run.app",
     "webhookType": "STANDARD"
   },
   "timeout": {

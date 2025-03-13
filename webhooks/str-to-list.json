@@ -2,7 +2,7 @@
   "name": "4887df4e-8752-4b41-9505-d1ac0502c510",
   "displayName": "str-to-list",
   "genericWebService": {
-    "uri": "https://str-to-list-73383908694.us-central1.run.app",
+    "uri": "https://str-to-list-882900569176.europe-west1.run.app",
     "webhookType": "STANDARD"
   },
   "timeout": {

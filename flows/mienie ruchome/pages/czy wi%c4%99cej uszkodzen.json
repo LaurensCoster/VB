@@ -52,5 +52,35 @@
     },
     "targetPage": "petla mienie ruchome",
     "name": "9b0db2fc-602e-4a53-b3d9-b25b8e37acc6"
+  } ],
+  "eventHandlers": [ {
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$session.params.rodzaj",
+        "value": null
+      }, {
+        "parameter": "$session.params.model",
+        "value": null
+      }, {
+        "parameter": "$session.params.data",
+        "value": null
+      }, {
+        "parameter": "$session.params.charakter_uszkodzen",
+        "value": null
+      }, {
+        "parameter": "$session.params.lokalizacja_uszkodzen",
+        "value": null
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "name": "540c80fa-1d59-458c-b516-f59f7788f730"
   } ]
 }

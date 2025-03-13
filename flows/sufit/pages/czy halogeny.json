@@ -30,5 +30,23 @@
     },
     "targetPage": "uszkodzenia",
     "name": "b08800fc-c26e-4fb6-a180-bbf712394299"
+  } ],
+  "eventHandlers": [ {
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "wykonczenie_sufit",
+        "value": [ ]
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "name": "5bbc77ea-3d2a-4a58-8fb8-d18e5c0cca9e"
   } ]
 }

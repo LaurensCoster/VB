@@ -30,5 +30,23 @@
     },
     "targetPage": "czy panele",
     "name": "85e76d0b-b911-41c2-8305-42323bd4c2fc"
+  } ],
+  "eventHandlers": [ {
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "wykonczenie_podloga",
+        "value": [ ]
+      } ],
+      "advancedSettings": {
+        "playbackInterruptionSettings": {
+        
+        },
+        "dtmfSettings": {
+          "useSystemEntityRule": false
+        }
+      }
+    },
+    "name": "65e4b68f-0778-45cd-806f-70db039fdef0"
   } ]
 }
