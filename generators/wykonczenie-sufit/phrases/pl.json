@@ -1,6 +1,0 @@
-{
-  "promptTexts": [ {
-    "text": "Na pytanie 'Jaki jest rodzaj wykończenia sufitu?', użytkownik odpowiedział: $last-user-utterance. Proszę wypisać wszystkie wykończenia, które użytkownik wymienia, w formie listy. Wykończenia mogą obejmować tylko: karton gips, halogeny, kasetony, mdf, wełna mineralna, farba, tapeta. Odpowiedź powinna mieć postać listy i nie powinna zawierać żadnego tekstu poza listą.\nWeź pod uwagę synonimy i kontekst. Jeśli użytkownik powie synonim traktuj to jak to wykończenie:\nhalogeny - lampki, lampy\nfarba - pomalowane, malowane\nPrzykład:\nDla odpowiedzi użytkownika: 'Sufit jest zrobiony z karton gipsu pomalowanego farbą. Znajdują się na nim halogenowe lampki.' Odpowiedź w formie listy powinna wyglądać tak:\n'[\"karton gips\", \"farba\", \"halogeny\"]'",
-    "languageCode": "pl"
-  } ]
-}

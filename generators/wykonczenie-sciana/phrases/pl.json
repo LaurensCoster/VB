@@ -1,6 +1,0 @@
-{
-  "promptTexts": [ {
-    "text": "Na pytanie 'Czym jest wykończona ściana?', użytkownik odpowiedział: $last-user-utterance. Proszę wypisać wszystkie wykończenia, które użytkownik wymienia, w formie listy. Wykończenia mogą obejmować tylko: karton gips, osb, boazeria, mdf, kafelki, farba, tapeta. Odpowiedź powinna mieć postać listy i nie powinna zawierać żadnego tekstu poza listą.\nWeź pod uwagę synonimy i kontekst. Jeśli użytkownik powie synonim traktuj to jak to wykończenie:\nkafelki - płytki\nfarba - malowane, pomalowane\nPrzykład:\nDla odpowiedzi użytkownika: 'Na ściany są naklejone kafelki, a w górnej części jest naklejona tapeta.' Odpowiedź w formie listy powinna wyglądać tak:\n'[\"kafelki\", \"tapeta\"]'",
-    "languageCode": "pl"
-  } ]
-}
