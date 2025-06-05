@@ -9,7 +9,13 @@ def hello_http(request):
     dictionary = session_params.get(tag)
     dictionary = dictionary[8:-4]
     print(repr(dictionary))
-    dictionary = json.loads(dictionary)
+    try:
+        dictionary = json.loads(dictionary)
+    except:
+        try:
+            dictionary = ast.literal_eval(dictionary)
+        except:
+            dictionary = []
 
     session_params["dlugosc"] = dictionary["dlugosc"]
     session_params["szerokosc"] = dictionary["szerokosc"]
